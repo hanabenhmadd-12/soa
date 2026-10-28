@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinema nom="CineFax"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="cinema.xsd">
+
+    <films>
+        <film id="F1" promotion="true">
+            <titre>Inception</titre>
+            <genre>ScienceFiction</genre>
+            <annee>2010</annee>
+            <duree>148</duree>
+            <realisateur>Christopher Nolan</realisateur>
+            <prix>12.50</prix>
+            <note>8.8</note>
+        </film>
+        <film id="F2" promotion="false">
+            <titre>Le Parrain</titre>
+            <genre>Drame</genre>
+            <annee>1972</annee>
+            <duree>175</duree>
+            <realisateur>Francis Ford Coppola</realisateur>
+            <prix>10.00</prix>
+            <note>9.2</note>
+        </film>
+        <film id="F3" promotion="true">
+            <titre>Intouchables</titre>
+            <genre>Comedie</genre>
+            <annee>2011</annee>
+            <duree>112</duree>
+            <realisateur>Olivier Nakache</realisateur>
+            <prix>9.00</prix>
+            <note>8.5</note>
+        </film>
+        <film id="F4" promotion="false">
+            <titre>Interstellar</titre>
+            <genre>ScienceFiction</genre>
+            <annee>2014</annee>
+            <duree>169</duree>
+            <realisateur>Christopher Nolan</realisateur>
+            <prix>13.00</prix>
+            <note>8.6</note>
+        </film>
+        <film id="F5" promotion="false">
+            <titre>Titanic</titre>
+            <genre>Romance</genre>
+            <annee>1997</annee>
+            <duree>195</duree>
+            <realisateur>James Cameron</realisateur>
+            <prix>8.50</prix>
+            <note>7.9</note>
+        </film>
+    </films>
+    <utilisateurs>
+        <utilisateur id="U1" actif="true">
+            <nom>Ahmed Ben Ali</nom>
+            <email>ahmed.benali@example.com</email>
+        </utilisateur>
+        <utilisateur id="U2" actif="false">
+            <nom>Sana Trabelsi</nom>
+            <email>sana.trabelsi@example.com</email>
+        </utilisateur>
+        <utilisateur id="U3" actif="true">
+            <nom>Mohamed Gharbi</nom>
+            <email>mohamed.gharbi@example.com</email>
+        </utilisateur>
+    </utilisateurs>
+    <reservations>
+        <reservation id="R1" utilisateurRef="U1" filmRef="F1">
+            <date>2025-11-10</date>
+            <nbPlaces>2</nbPlaces>
+        </reservation>
+        <reservation id="R2" utilisateurRef="U1" filmRef="F4">
+            <date>2025-11-15</date>
+            <nbPlaces>3</nbPlaces>
+        </reservation>
+        <reservation id="R3" utilisateurRef="U3" filmRef="F3">
+            <date>2025-11-12</date>
+            <nbPlaces>1</nbPlaces>
+        </reservation>
+    </reservations>
+</cinema>
